@@ -1,0 +1,97 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+address {
+  font-style: normal;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+body {
+  margin: 0 0 8px 0;
+}
+.search {
+  text-align: center;
+  background-color: #1b51a8;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.search-form {
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 24px;
+}
+
+.photo-card {
+  width: 396px;
+}
+@media only screen and (min-width: 768px) {
+  .photo-card {
+    width: calc((100% - 1 * 24px) / 2);
+  }
+}
+/* Destop styles & >  */
+@media only screen and (min-width: 1158px) {
+  .photo-card {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+}
+.pict {
+  height: 80%;
+}
+.gallery__img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.info {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item {
+  text-align: center;
+}
+
+.navigation {
+  text-align: center;
+}
+.load-more {
+  background-color: #1b51a8;
+  color: #fff;
+  margin: 24px auto;
+}
